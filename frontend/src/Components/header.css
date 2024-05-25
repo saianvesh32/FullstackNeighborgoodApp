@@ -1,0 +1,94 @@
+header {
+  background-color: #343a40; /* Dark background color */
+  color: #f8f9fa; /* Light text color */
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+nav .left h1 {
+  margin: 0;
+  font-size: 2rem; /* Increase font size for the title */
+  color: #f8f9fa; /* Ensure the title color is light */
+}
+
+nav .right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 2;
+}
+
+nav .right ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav .right ul li {
+  margin: 0 1rem;
+  font-size: 1.1rem; /* Increase font size for list items */
+}
+
+nav .right ul li a {
+  text-decoration: none;
+  color: #f8f9fa; /* Light text color */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav .right ul li a:hover {
+  color: #adb5bd; /* Light gray color on hover */
+}
+
+nav .right ul li img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+nav .right ul li[style] {
+  color: #f8f9fa; /* Light text color for user's name */
+  font-weight: bold;
+}
+
+nav .right ul li:last-child {
+  cursor: pointer;
+  color: #f8f9fa;
+  font-weight: 500;
+}
+
+nav .right ul li:last-child:hover {
+  color: #adb5bd; /* Light gray color on hover */
+}
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  li {
+    a {
+      text-decoration: none;
+      color: #0077b6;
+      font-size: 1.2rem;
+      transition: 0.1s ease-in-out;
+      &:hover {
+        color: #023e8a;
+      }
+    }
+    &:first-of-type {
+      a {
+        color: #023e8a;
+        font-weight: 900;
+      }
+    }
+  }
+}

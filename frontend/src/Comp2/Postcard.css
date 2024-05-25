@@ -1,0 +1,76 @@
+/* Ensure the container is centered and stacked */
+.postcard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between image and content */
+  }
+  
+  .postcard-image {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .content-section {
+    text-align: center;
+    max-width: 600px; /* Optional: to constrain the content width */
+  }
+  
+  .headline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #ffcc70; /* Highlight color */
+  }
+  
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  .getbtn {
+    background-color: rgb(237, 53, 21); /* Bright red background color */
+    color: white; /* White text color for contrast */
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-size: 16px; /* Readable font size */
+    font-weight: 500; /* Medium weight for prominence */
+    padding: 10px 20px; /* Padding for a comfortable click area */
+    border: none; /* No border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline for links styled as buttons */
+    display: inline-block; /* Allows margin and padding to work */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    margin-top: 20px;
+  }
+  
+  .getbtn:hover {
+    background-color: rgb(200, 45, 18); /* Slightly darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .getbtn:active {
+    background-color: rgb(180, 40, 16); /* Even darker red on click */
+    transform: scale(0.98); /* Slight shrink effect on click */
+  }
+  

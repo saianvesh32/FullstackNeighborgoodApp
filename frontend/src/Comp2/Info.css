@@ -1,0 +1,45 @@
+.info-container {
+    padding: 20px;
+  }
+  
+  .user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .user-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .user-card__photo {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .user-card h3 {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .user-card p {
+    margin: 4px 0;
+    color: #666;
+  }
+  
+  .user-card__icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .icon {
+    margin: 0 8px;
+    font-size: 24px;
+  }
+  

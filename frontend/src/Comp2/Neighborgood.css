@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  .head1 {
+    color: white;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+  
+  .head1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    padding-left: 550px;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* padding-bottom: 1150px; */
+   /* padding: 0 0 0 500px; */
+  }
+  .img1{
+    padding-left: 350px;
+    height:350px;
+    width: 1150px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .para {
+    font-size: 20px; /* Readable font size */
+    line-height: 1.6; /* Comfortable line height for readability */
+    color: #000000; /* Dark grey color for the text */
+    background-color: #cebbbb; /* White background to highlight the paragraph */
+    padding: 20px; /* Padding around the text */
+    margin: 20px auto; /* Margin around the paragraph */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(137, 24, 24, 0.1); /* Subtle shadow for a lifted effect */
+    max-width: 800px; /* Maximum width for the paragraph */
+    text-align: justify; /* Justified text alignment for neatness */
+}
+.getbtn {
+    background-color: rgb(237, 53, 21); /* Bright red background color */
+    color: white; /* White text color for contrast */
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-size: 16px; /* Readable font size */
+    font-weight: 500; /* Medium weight for prominence */
+    padding: 10px 20px; /* Padding for a comfortable click area */
+    border: none; /* No border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline for links styled as buttons */
+    display: inline-block; /* Allows margin and padding to work */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    
+}
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Full height of the viewport */ 
+    /* margin: 0; Remove default margin */
+    /* font-family: 'Poppins', sans-serif; */
+    /* background-color: #f5f5f5; /* Light background color */
+}
+
+.getbtn:hover {
+    background-color: rgb(200, 45, 18); /* Slightly darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.getbtn:active {
+    background-color: rgb(180, 40, 16); /* Even darker red on click */
+    transform: scale(0.98); /* Slight shrink effect on click */
+}
+.totbtn{
+    margin-left: 650px;
+}
