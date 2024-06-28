@@ -103,6 +103,12 @@ const Headers = () => {
     const getUser = async () => {
         try {
             // console.log("hello");
+            const token = localStorage.getItem('user:token');
+            if (token) {
+                const userDetails = JSON.parse(localStorage.getItem('user:detail'));
+                setUserdata(userDetails);
+                return;
+            }
             const response = await fetch("http://localhost:6005/login/success", {
                 method: 'GET',
                 credentials: 'include'
@@ -122,6 +128,8 @@ const Headers = () => {
     };
 
     const logout = () => {
+        localStorage.removeItem('user:token');
+        localStorage.removeItem('user:detail');
         window.open("http://localhost:6005/logout", "_self");
     };
 

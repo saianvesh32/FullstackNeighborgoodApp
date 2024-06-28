@@ -16,6 +16,7 @@ const Login = ({ isSignInPage = true }) => {
   });
 
   const handleSubmit = async (e) => {
+    console.log("hello");
     console.log('data :>> ', data);
     e.preventDefault();
     const res = await fetch(`http://localhost:6005/api/${isSignInPage ? 'login' : 'register'}`, {
@@ -35,6 +36,7 @@ const Login = ({ isSignInPage = true }) => {
       if (resData.token) {
         localStorage.setItem('user:token', resData.token);
         localStorage.setItem('user:detail', JSON.stringify(resData.user));
+        console.log("hii iam login succeffully with credentials");
         navigate('/dashboard');
       }
     }
